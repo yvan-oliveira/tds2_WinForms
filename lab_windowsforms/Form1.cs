@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace lab_windowsforms
 {
-    public partial class Form1 : Form
+    public partial class frm_formulario_de_cadastro : Form
     {
-        public Form1()
+        public frm_formulario_de_cadastro()
         {
             InitializeComponent();
         }
@@ -50,7 +50,7 @@ namespace lab_windowsforms
             Random sorteio = new Random();
             int indice = sorteio.Next(nomes.Length);
 
-            this.label1.Text = nomes[indice];
+            this.lbl_titulo.Text = nomes[indice];
         }
     }
 }
