@@ -16,5 +16,16 @@ namespace lab_windowsforms
         {
             InitializeComponent();
         }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("O Senhor é o ");
+        }
+
+        private void pessoaFisicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
     }
 }

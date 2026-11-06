@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace lab_windowsforms
 {
-    public partial class Form2 : Form
+    public partial class FrmCadPessoaJuridica : Form
     {
-        public Form2()
+        public FrmCadPessoaJuridica()
         {
             InitializeComponent();
+        }
+
+        private void pessoaFisicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

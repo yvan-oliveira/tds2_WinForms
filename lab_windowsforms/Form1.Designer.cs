@@ -1,6 +1,6 @@
 ﻿namespace lab_windowsforms
 {
-    partial class frm_formulario_de_cadastro
+    partial class Form1
     {
         /// <summary>
         /// Variável de designer necessária.

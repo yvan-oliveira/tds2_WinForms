@@ -10,15 +10,16 @@ using System.Windows.Forms;
 
 namespace lab_windowsforms
 {
-    public partial class frm_formulario_de_cadastro : Form
+    public partial class Form1 : Form
     {
-        public frm_formulario_de_cadastro()
+        public Form1()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             string[] nomes = { "Raphael", "Wallacy", "Amanda", "Pedro" };
 
             Random sorteio = new Random();

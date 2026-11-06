@@ -16,7 +16,7 @@ namespace lab_windowsforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_formulario_de_cadastro());
+            Application.Run(new FrmCadPessoaJuridica());
         }
     }
 }
