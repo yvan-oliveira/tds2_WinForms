@@ -17,32 +17,6 @@ namespace lab_windowsforms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show("Olá, Mundo\nPara de corrigir o professor, Yvan");
-            SortColors();
-        }
-
-        private void SortColors()
-        {
-            Color[] colors = {
-                Color.Red,
-                Color.Green,
-                Color.Blue,
-                Color.Yellow,
-                Color.Orange,
-                Color.Purple,
-                Color.Pink,
-                Color.Brown,
-                Color.Gray,
-                Color.Black
-            };
-            Random sorteio = new Random();
-            
-            int indice = sorteio.Next(colors.Length);
-            this.BackColor = colors[indice];
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             string[] nomes = { "Raphael", "Wallacy", "Amanda", "Pedro" };
@@ -51,6 +25,23 @@ namespace lab_windowsforms
             int indice = sorteio.Next(nomes.Length);
 
             this.lbl_titulo.Text = nomes[indice];
+        }
+
+        private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+            string nome = this.txt_nome.Text;
+            string endereco = this.txt_endereco.Text;
+            string dtNascimento = this.dtp_nascimento.Text;
+            string cpf = this.mtb_cpf.Text;
+            string telefone = this.mtb_telefone.Text;
+            string genero = this.cmb_genero.SelectedItem?.ToString() ?? "Não informado";
+
+            MessageBox.Show($"Nome: {nome}\n" +
+                            $"Endereço: {endereco}\n" +
+                            $"Nascimento: {dtNascimento}\n" +
+                            $"CPF: {cpf}\n" +
+                            $"Telefone: {telefone}\n" +
+                            $"Genero: {genero}\n");
         }
     }
 }
