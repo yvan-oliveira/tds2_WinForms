@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mspMenu = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoaFisicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoaJurídicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,23 +38,23 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.str_funcionario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.str_funcao = new System.Windows.Forms.ToolStripStatusLabel();
-            this.menuStrip1.SuspendLayout();
+            this.strFuncionario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.strFuncao = new System.Windows.Forms.ToolStripStatusLabel();
+            this.mspMenu.SuspendLayout();
             this.StatusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // mspMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mspMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
             this.ajudaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.mspMenu.Location = new System.Drawing.Point(0, 0);
+            this.mspMenu.Name = "mspMenu";
+            this.mspMenu.Size = new System.Drawing.Size(800, 24);
+            this.mspMenu.TabIndex = 1;
+            this.mspMenu.Text = "menuStrip1";
             // 
             // cadastroToolStripMenuItem
             // 
@@ -68,14 +68,14 @@
             // pessoaFisicaToolStripMenuItem
             // 
             this.pessoaFisicaToolStripMenuItem.Name = "pessoaFisicaToolStripMenuItem";
-            this.pessoaFisicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pessoaFisicaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.pessoaFisicaToolStripMenuItem.Text = "Pessoa Física";
             this.pessoaFisicaToolStripMenuItem.Click += new System.EventHandler(this.pessoaFisicaToolStripMenuItem_Click);
             // 
             // pessoaJurídicaToolStripMenuItem
             // 
             this.pessoaJurídicaToolStripMenuItem.Name = "pessoaJurídicaToolStripMenuItem";
-            this.pessoaJurídicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pessoaJurídicaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.pessoaJurídicaToolStripMenuItem.Text = "Pessoa Jurídica";
             // 
             // relatóriosToolStripMenuItem
@@ -91,19 +91,19 @@
             // vendaToolStripMenuItem
             // 
             this.vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
-            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.vendaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vendaToolStripMenuItem.Text = "Vendas";
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtoToolStripMenuItem.Text = "Produtos";
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // ajudaToolStripMenuItem
@@ -116,25 +116,25 @@
             // StatusStrip1
             // 
             this.StatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.str_funcionario,
-            this.str_funcao});
+            this.strFuncionario,
+            this.strFuncao});
             this.StatusStrip1.Location = new System.Drawing.Point(0, 428);
             this.StatusStrip1.Name = "StatusStrip1";
             this.StatusStrip1.Size = new System.Drawing.Size(800, 22);
             this.StatusStrip1.TabIndex = 2;
             this.StatusStrip1.Text = "Yvan Oliveira";
             // 
-            // str_funcionario
+            // strFuncionario
             // 
-            this.str_funcionario.Name = "str_funcionario";
-            this.str_funcionario.Size = new System.Drawing.Size(76, 17);
-            this.str_funcionario.Text = "Yvan Oliveira";
+            this.strFuncionario.Name = "strFuncionario";
+            this.strFuncionario.Size = new System.Drawing.Size(76, 17);
+            this.strFuncionario.Text = "Yvan Oliveira";
             // 
-            // str_funcao
+            // strFuncao
             // 
-            this.str_funcao.Name = "str_funcao";
-            this.str_funcao.Size = new System.Drawing.Size(68, 17);
-            this.str_funcao.Text = "OPERADOR";
+            this.strFuncao.Name = "str_funcao";
+            this.strFuncao.Size = new System.Drawing.Size(68, 17);
+            this.strFuncao.Text = "OPERADOR";
             // 
             // FrmMenuPrincipal
             // 
@@ -142,11 +142,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.StatusStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.mspMenu);
             this.Name = "FrmMenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuPrincipal";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.mspMenu.ResumeLayout(false);
+            this.mspMenu.PerformLayout();
             this.StatusStrip1.ResumeLayout(false);
             this.StatusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -156,7 +157,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip mspMenu;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pessoaFisicaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pessoaJurídicaToolStripMenuItem;
@@ -166,7 +167,7 @@
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.StatusStrip StatusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel str_funcionario;
-        private System.Windows.Forms.ToolStripStatusLabel str_funcao;
+        private System.Windows.Forms.ToolStripStatusLabel strFuncionario;
+        private System.Windows.Forms.ToolStripStatusLabel strFuncao;
     }
 }

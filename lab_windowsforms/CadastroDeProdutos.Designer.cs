@@ -56,18 +56,21 @@
             this.lblMargem = new System.Windows.Forms.Label();
             this.lblPrecoCusto = new System.Windows.Forms.Label();
             this.grpSituacaoEDetalhes = new System.Windows.Forms.GroupBox();
+            this.dtpDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.lblDataCadastro = new System.Windows.Forms.Label();
             this.chkStatusProduto = new System.Windows.Forms.CheckBox();
-            this.dtpDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.btnNovo = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.imgNovo = new System.Windows.Forms.ImageList(this.components);
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.imgSalvar = new System.Windows.Forms.ImageList(this.components);
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.imgLimpar = new System.Windows.Forms.ImageList(this.components);
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.imgExcluir = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpDadosPrincipais.SuspendLayout();
@@ -116,6 +119,8 @@
             // 
             // grpDadosPrincipais
             // 
+            this.grpDadosPrincipais.Controls.Add(this.label2);
+            this.grpDadosPrincipais.Controls.Add(this.label1);
             this.grpDadosPrincipais.Controls.Add(this.txtDescricao);
             this.grpDadosPrincipais.Controls.Add(this.cmbCategoria);
             this.grpDadosPrincipais.Controls.Add(this.cmbFornecedor);
@@ -123,9 +128,10 @@
             this.grpDadosPrincipais.Controls.Add(this.txtNomeProduto);
             this.grpDadosPrincipais.Controls.Add(this.lblDescricao);
             this.grpDadosPrincipais.Controls.Add(this.lblFornecedor);
-            this.grpDadosPrincipais.Controls.Add(this.lblCategoria);
             this.grpDadosPrincipais.Controls.Add(this.lblNomeProduto);
             this.grpDadosPrincipais.Controls.Add(this.lblCodigo);
+            this.grpDadosPrincipais.Controls.Add(this.label3);
+            this.grpDadosPrincipais.Controls.Add(this.lblCategoria);
             this.grpDadosPrincipais.Font = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold);
             this.grpDadosPrincipais.Location = new System.Drawing.Point(12, 107);
             this.grpDadosPrincipais.Name = "grpDadosPrincipais";
@@ -149,6 +155,17 @@
             // 
             this.cmbCategoria.Font = new System.Drawing.Font("Arial", 12.25F);
             this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Embalagens",
+            "Confeitaria",
+            "Ingredientes para Panificação",
+            "Laticínios",
+            "Biscoitos e Bolachas",
+            "Salgados",
+            "Bebidas",
+            "Doces e Sobremesas",
+            "Bolos e Tortas",
+            "Pães"});
             this.cmbCategoria.Location = new System.Drawing.Point(583, 44);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(196, 26);
@@ -159,6 +176,12 @@
             // 
             this.cmbFornecedor.Font = new System.Drawing.Font("Arial", 12.25F);
             this.cmbFornecedor.FormattingEnabled = true;
+            this.cmbFornecedor.Items.AddRange(new object[] {
+            "Vigor",
+            "Unilever",
+            "Coca-Cola",
+            "Bauducco",
+            "Nestlé"});
             this.cmbFornecedor.Location = new System.Drawing.Point(15, 98);
             this.cmbFornecedor.Name = "cmbFornecedor";
             this.cmbFornecedor.Size = new System.Drawing.Size(238, 26);
@@ -357,6 +380,16 @@
             this.grpSituacaoEDetalhes.TabStop = false;
             this.grpSituacaoEDetalhes.Text = "Situação / Detalhes";
             // 
+            // dtpDataCadastro
+            // 
+            this.dtpDataCadastro.CalendarFont = new System.Drawing.Font("Arial", 12.25F);
+            this.dtpDataCadastro.Font = new System.Drawing.Font("Arial", 12.25F);
+            this.dtpDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataCadastro.Location = new System.Drawing.Point(20, 91);
+            this.dtpDataCadastro.Name = "dtpDataCadastro";
+            this.dtpDataCadastro.Size = new System.Drawing.Size(200, 26);
+            this.dtpDataCadastro.TabIndex = 2;
+            // 
             // lblDataCadastro
             // 
             this.lblDataCadastro.AutoSize = true;
@@ -378,16 +411,6 @@
             this.chkStatusProduto.Text = "Produto Ativo";
             this.chkStatusProduto.UseVisualStyleBackColor = true;
             // 
-            // dtpDataCadastro
-            // 
-            this.dtpDataCadastro.CalendarFont = new System.Drawing.Font("Arial", 12.25F);
-            this.dtpDataCadastro.Font = new System.Drawing.Font("Arial", 12.25F);
-            this.dtpDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataCadastro.Location = new System.Drawing.Point(20, 91);
-            this.dtpDataCadastro.Name = "dtpDataCadastro";
-            this.dtpDataCadastro.Size = new System.Drawing.Size(200, 26);
-            this.dtpDataCadastro.TabIndex = 2;
-            // 
             // btnNovo
             // 
             this.btnNovo.AutoSize = true;
@@ -403,6 +426,12 @@
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
             // 
+            // imgNovo
+            // 
+            this.imgNovo.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgNovo.ImageStream")));
+            this.imgNovo.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgNovo.Images.SetKeyName(0, "simbolo-novo-arquivo.png");
+            // 
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
@@ -415,6 +444,13 @@
             this.btnSalvar.Text = "  Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // imgSalvar
+            // 
+            this.imgSalvar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgSalvar.ImageStream")));
+            this.imgSalvar.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgSalvar.Images.SetKeyName(0, "simbolo-novo-arquivo.png");
+            this.imgSalvar.Images.SetKeyName(1, "simbolo-salvar.png");
             // 
             // btnLimpar
             // 
@@ -429,6 +465,13 @@
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
+            // imgLimpar
+            // 
+            this.imgLimpar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgLimpar.ImageStream")));
+            this.imgLimpar.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgLimpar.Images.SetKeyName(0, "simbolo-novo-arquivo.png");
+            this.imgLimpar.Images.SetKeyName(1, "simbolo-limpar.png");
+            // 
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
@@ -441,26 +484,6 @@
             this.btnExcluir.Text = "  Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // imgNovo
-            // 
-            this.imgNovo.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgNovo.ImageStream")));
-            this.imgNovo.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgNovo.Images.SetKeyName(0, "simbolo-novo-arquivo.png");
-            // 
-            // imgSalvar
-            // 
-            this.imgSalvar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgSalvar.ImageStream")));
-            this.imgSalvar.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgSalvar.Images.SetKeyName(0, "simbolo-novo-arquivo.png");
-            this.imgSalvar.Images.SetKeyName(1, "simbolo-salvar.png");
-            // 
-            // imgLimpar
-            // 
-            this.imgLimpar.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgLimpar.ImageStream")));
-            this.imgLimpar.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgLimpar.Images.SetKeyName(0, "simbolo-novo-arquivo.png");
-            this.imgLimpar.Images.SetKeyName(1, "simbolo-limpar.png");
             // 
             // imgExcluir
             // 
@@ -481,6 +504,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(823, 85);
             this.panel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(308, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 19);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "*";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(99, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 19);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(650, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 19);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "*";
             // 
             // frmCadastroDeProdutos
             // 
@@ -554,5 +610,8 @@
         private System.Windows.Forms.ImageList imgLimpar;
         private System.Windows.Forms.ImageList imgExcluir;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lab_windowsforms.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace lab_windowsforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastroDeProdutos());
+            Application.Run(new FrmLogin());
         }
     }
 }
